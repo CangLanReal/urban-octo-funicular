@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+    int n,x=1,a=1,b=1,c,sum=1,y;
+    scanf("%d",&n);
+
+    
+    if(n>1)
+    {
+    	while(n>=sum)
+    	{
+        	c=a+b;
+        	a=b;
+			y=b;
+        	b=c;
+        	sum=c;
+        	x++;
+    	}
+    	if(n>y)
+    	{
+    		x++;
+		}
+    }
+    printf("%d",x);
+}
